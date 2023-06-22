@@ -1,5 +1,3 @@
 # Ignora la carpeta node_modules
-./API/node_modules
-./auth/node_modules
-./listaAnimales/node_modules
-./listaAnimales/node_modules
+**/node_modules
+
