@@ -50,7 +50,7 @@ const addFormListener = () => {
     formulario.onsubmit = async (e) => {
         e.preventDefault()
         const formData = new FormData(formulario)
-        const data = Object.fromEntries(formData.entries())
+        const data = Object.fromEntries(formData.entries()) // transformamos el formulario en un arreglo
         await fetch('/users', {
             method: 'POST',
             body: JSON.stringify(data),
